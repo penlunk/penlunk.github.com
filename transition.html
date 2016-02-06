@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transition</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			margin: 0 auto;
+
+		}
+
+		div:hover{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			background-color: gray;
+			-webkit-animation:hover 1s ease-in infinite  ;
+		}
+
+		@-webkit-keyframes hover{
+			0%{width: 200px;height:200px;border-radius: 0%;background-color: red;}
+			50%{width: 300px;height:300px;border-radius: 50%;background-color: gray;}
+			100%{width: 200px;height:200px;border-radius: 0%;background-color: red;}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
