@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Plain小菜园</title>
+	<link rel="shortcut icon" href="Big_img/01.gif"  type="image/x-icon">
+	<link rel="stylesheet" href="css/jquery.fullpage.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
+	<script>
+		$(function(){
+			$(".main").fullpage({
+				continuousVertical:true,
+				navigation:true,
+				navigationPosition:'left',
+				navigationTooltips:['第一屏','第二屏','第三屏','第四屏'],
+			});
+		});
+	</script>
+	<style>
+		.main{text-align: center;font-size: 88px;font-family: "微软雅黑";color: #fff;text-shadow: 5px 5px 2px #000;}
+		.menu{position: fixed;top: 0;left: 0;z-index: 100;}
+		.s1{background: url(img/1.jpg) 50%;background-size: cover;}
+		.s2{background: url(img/5.jpg) 50%; background-size: cover;}
+		.s3{background: url(img/3.jpg) 50%;background-size: cover;}
+		.s4{background: url(img/2.jpg) 50%;background-size: cover;}
+	</style> 
+	
+</head>
+<body>
+
+	<div class="main">
+		<div class="section s1">第一屏</div>
+		<div class="section s2">
+			<div class="slide">第二屏1</div>
+			<div class="slide">第二屏2</div>
+			<div class="slide">第二屏3</div>
+			<div class="slide">第二屏4</div>
+		</div>
+			
+		<div class="section s3"><a href="fullpage_test.html">去往另一个页面</a></div>
+		<div class="section s4">第四屏</div>
+	</div>
+</body>
+</html>
